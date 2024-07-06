@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, AlertCircle, User, Settings, Users } from "lucide-react";
+import { Home, AlertCircle, User, Settings as SettingsIcon, Users } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // available: default, navbar, sidebar
 import Index from "./pages/Index.jsx";
@@ -32,7 +32,7 @@ export const navItems = [
   {
     title: "Settings",
     to: "/settings",
-    icon: <Settings className="h-4 w-4" />,
+    icon: <SettingsIcon className="h-4 w-4" />,
   },
   {
     title: "Profile",
